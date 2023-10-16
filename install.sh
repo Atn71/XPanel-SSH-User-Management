@@ -20,7 +20,7 @@ if [ -f "$ENV_FILE" ]; then
 fi
 # List of supported distributions
 #supported_distros=("Ubuntu" "Debian" "Fedora" "CentOS" "Arch")
-supported_distros=("Ubuntu")
+supported_distros=("Debian")
 # Get the distribution name and version
 if [[ -f "/etc/os-release" ]]; then
     source "/etc/os-release"
