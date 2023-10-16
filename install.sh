@@ -45,7 +45,7 @@ fi
 if [ "$(uname)" == "Linux" ]; then
     version_info=$(lsb_release -rs)
     # Check if it's Ubuntu and version is below 20
-    if [ "$(lsb_release -is)" == "Ubuntu" ] && [ "$(echo "$version_info < 20" | bc)" -eq 1 ]; then
+    if [ "$(lsb_release -is)" == "Debian" ] && [ "$(echo "$version_info < 20" | bc)" -eq 1 ]; then
         echo "This Script is using php8.1 and only supported in ubuntu 20 and above"
         exit
     fi
